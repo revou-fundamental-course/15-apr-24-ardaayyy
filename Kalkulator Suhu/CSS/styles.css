@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1532009324734-20a7a5813719');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.calculator {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-field {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #5bd99a;
+}
+
+h2 {
+    color: #5bd99a;
+}
+
+/* Button Styles */
+.button {
+    background-color: #5bd99a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #4cb289;
+}
+
+/* Result Display Styles */
+.result-box {
+    margin-bottom: 20px;
+}
+
+.result-item {
+    margin-bottom: 10px;
+}
+
+.result-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.result-value {
+    font-weight: bold;
+    color: #5bd99a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .calculator {
+        padding: 20px;
+    }
+}
